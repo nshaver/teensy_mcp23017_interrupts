@@ -52,9 +52,9 @@ void setup() {
 	delay(500);
 	Serial.println("setup started");
 
-  mcp1.begin(7);
-  mcp2.begin(6);
-  mcp3.begin(5);
+	mcp1.begin(7);
+	mcp2.begin(6);
+	mcp3.begin(5);
 
 	pinMode(MCP_INT_PIN, INPUT_PULLUP);
 	mcp1.setupInterrupts(true,true,LOW);
@@ -70,7 +70,7 @@ void setup() {
 	// read MCP23017 asap to init for use with interrupt
 	mcp1.readGPIOAB();
 
-  pinMode(LED_PIN, OUTPUT);
+	pinMode(LED_PIN, OUTPUT);
 	digitalWrite(LED_PIN, LOW);
 
 	attachInterrupt(digitalPinToInterrupt(MCP_INT_PIN), handleInterrupt, LOW);
