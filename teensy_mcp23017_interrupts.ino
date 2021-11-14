@@ -2,7 +2,7 @@
 	 tests use of multiple CQRobot mcp23017 boards with teensy 4.1
 	 board #1 is i2c address 0x27, unsoldered, all pins used as inputs
 	 board #2 is i2c address 0x26, soldered across A0, all pins used as outputs
-	 board #2 is i2c address 0x25, soldered across A1, all pins used as outputs
+	 board #3 is i2c address 0x25, soldered across A1, all pins used as outputs
  */
 #include "Adafruit_MCP23017.h"
 
