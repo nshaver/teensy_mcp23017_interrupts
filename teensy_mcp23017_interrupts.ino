@@ -62,7 +62,7 @@ void setup() {
 	for (int i=0;i<16;i++){
   	mcp1.pinMode(i, INPUT); // set all pins on board #1 as inputs
   	mcp1.pullUp(i, HIGH);  // turn on a 100K pullup internally
-		mcp1.setupInterruptPin(i,CHANGE);
+	mcp1.setupInterruptPin(i,CHANGE);
 
   	mcp2.pinMode(i, OUTPUT); // set all pins on board #2 as outputs, for LEDs
   	mcp3.pinMode(i, OUTPUT); // set all pins on board #3 as outputs, for LEDs
